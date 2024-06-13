@@ -40,10 +40,10 @@ public class App {
                 transposedSheet.createRow(i).createCell(0).setCellValue(name);
 
                 for (Row row: sheet) {
-                    if (row.getRowNum() < 7) continue;
+                    if (row.getRowNum() < 6) continue;
                     for (Cell cell : row) {
                         if (cell == null) continue;
-                        if (cell.getColumnIndex() < 3 || cell.getColumnIndex() > 7) continue;
+                        if (cell.getColumnIndex() < 3 || cell.getColumnIndex() > 8) continue;
 
 
                         int columnNum = cell.getColumnIndex();
